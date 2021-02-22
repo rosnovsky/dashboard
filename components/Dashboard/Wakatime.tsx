@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const Wakatime = () => {
   const [codingTime, setCodingTime] = useState({ codingTime: 10000000 })
-  fetch('https://rosnovsky-dashboard/api/wakatime')
+  fetch('https://rosnovsky-dashboard.vercel.app/api/wakatime')
     .then((res) => res.json())
     .then((data) => setCodingTime(data))
 
